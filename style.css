@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( to right, #69a5d2 , #130b38) ;
+}
+
+.sol {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: #f2ae31;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 120px #f2ae31;
+}
+
+.mercurio-orbita, .venus-orbita, .terra-orbita, .marte-orbita, .jupiter-orbita, .saturno-orbita, .urano-orbita, .netuno-orbita {
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+}
+
+.mercurio-orbita {
+    width: 170px;
+    height: 170px;
+}
+
+.mercurio {
+    width: 15px;
+    height: 15px;
+    background-color: #82521d;
+    border-radius: 50%;
+    position: absolute;
+    left: 46%;
+    top: 45%;
+    animation: mercurioOrbita 4s linear infinite;
+}
+
+.venus-orbita {
+    width: 220px;
+    height: 220px;
+}
+
+.venus {
+    width: 35px;
+    height: 35px;
+    background-color: #ab651c;
+    border-radius: 50%;
+    left: 40%;
+    top: 41%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: venusOrbita 8.5s linear infinite;
+}
+
+.terra-orbita {
+    width:  320px;
+    height: 320px;
+}
+
+.terra {
+    width: 40px;
+    height: 40px;
+    background-color: #556291;
+    border-radius: 50%;
+    position: absolute;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: terraOrbita 12.2s linear infinite;
+}
+
+.lua-orbita {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lua {
+    width: 8px;
+    height: 8px;
+    background-color: #a29e9d;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: 39%;
+    animation: luaOrbita 5s linear infinite;
+}
+
+.marte-orbita {
+    width: 410px;
+    height: 410px;
+}
+
+.marte {
+    width: 20px;
+    height: 20px;
+    background-color: #c55e4f;
+    border-radius: 50%;
+    position: absolute;
+    left: 48%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    animation: marteOrbita 23s linear infinite;
+}
+
+.jupiter-orbita {
+    width: 510px;
+    height: 510px;
+}
+
+.jupiter {
+    width: 65px;
+    height: 65px;
+    background-color: #adaa9e;
+    border-radius: 50%;
+    position: absolute;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: jupiterOrbita 146s linear infinite;
+}
+
+.saturno-orbita {
+    width: 610px;
+    height: 610px;
+}
+
+.saturno {
+    width: 60px;
+    height: 60px;
+    background-color: #7a8486;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    animation: saturnoOrbita 366s linear infinite;
+}
+
+.urano-orbita {
+    width: 700px;
+    height: 700px;
+}
+
+.urano {
+    width: 50px;
+    height: 50px;
+    background-color:#4898c3;
+    border-radius: 50%;
+    position: absolute;
+    left: 46%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    animation: uranoOrbita 1050s linear infinite;
+}
+
+.netuno-orbita {
+    width: 770px;
+    height: 770px;
+}
+
+.netuno {
+    width: 45px;
+    height: 45px;
+    background-color: #365fc8;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top:  47%;
+    transform: translate(- 50%, -50%);
+
+    animation: netunoOrbita 2000s linear infinite;
+}
+
+@keyframes mercurioOrbita {
+    from {
+        transform: rotate(0deg)translateX(85px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(85px);
+    }
+}
+
+@keyframes venusOrbita {
+    from {
+        transform: rotate(0deg)translateX(110px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(110px);
+    }
+}
+
+@keyframes terraOrbita {
+    from {
+        transform: rotate(0deg)translateX(160px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(160px);
+    }
+}
+
+@keyframes luaOrbita {
+    from {
+        transform: rotate(0deg)translateX(25px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(25px);
+    }
+}
+
+@keyframes marteOrbita {
+    from {
+        transform: rotate(0deg)translateX(205px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(205px);
+    }
+}
+
+@keyframes jupiterOrbita {
+    from {
+        transform: rotate(0deg)translateX(255px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(255px);
+    }
+}
+
+@keyframes saturnoOrbita {
+    from {
+        transform: rotate(0deg)translateX(305px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(305px);
+    }
+}
+
+@keyframes uranoOrbita {
+    from {
+        transform: rotate(0deg)translateX(350px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(350px);
+    }
+}
+
+@keyframes netunoOrbita {
+    from {
+        transform: rotate(0deg)translateX(385px);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(385px);
+    }
+}
